@@ -1,0 +1,1400 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang16393{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;\red18\green124\blue155;\red36\green36\blue36;}
+\viewkind4\uc1\pard\f0\fs20 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [ec2-user@ip-172-31-93-223 ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# seteforce 0\cf1\highlight2 
+\par \cf0\highlight0 -bash: seteforce: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# setenforce 0\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# yum install git -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: amazon-id, rhui-lb, search-disabled-repos\cf1\highlight2 
+\par \cf0\highlight0 rhui-REGION-client-config-server-7                                                                | 2.9 kB  00:\cf1\highlight2 
+\par \cf0\highlight0 rhui-REGION-rhel-server-releases                                                                  | 3.5 kB  00:\cf1\highlight2 
+\par \cf0\highlight0 rhui-REGION-rhel-server-rh-common                                                                 | 3.8 kB  00:\cf1\highlight2 
+\par \cf0\highlight0 (2/7): rhui-REGION-rhel-server-releases/7Serve 0% [                                    ]  0.0 B/s |    0 B  --:(1/7): rhui-REGION-client-config-server-7/x86_64/primary_db                                       | 4.5 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/7): rhui-REGION-rhel-server-releases/7Server/x86_64/group                                      | 773 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/group                                     |  124 B  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/primary_db                                | 118 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/7): rhui-REGION-rhel-server-rh-common/7Server/x86_64/updateinfo                                |  34 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/7): rhui-REGION-rhel-server-releases/7Server/x86_64/updateinfo                                 | 3.5 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/7): rhui-REGION-rhel-server-releases/7Serv 12% [====                                ]  0.0 B/s | 8.5 MB  --:(7/7): rhui-REGION-rhel-server-releases/7Serv 28% [==========                          ]  16 MB/s |  20 MB  00:(7/7): rhui-REGION-rhel-server-releases/7Serv 46% [================-                   ]  17 MB/s |  32 MB  00:(7/7): rhui-REGION-rhel-server-releases/7Serv 70% [=========================           ]  19 MB/s |  49 MB  00:(7/7): rhui-REGION-rhel-server-releases/7Server/x86_64/primary_db                       |  65 MB  00:00:02\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package git.x86_64 0:1.8.3.1-20.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-Git = 1.8.3.1-20.el7 for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl >= 5.008 for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: /usr/bin/perl for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Error) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Exporter) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Basename) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Copy) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Find) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Path) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Spec) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::Temp) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(File::stat) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Getopt::Long) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Git) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Term::ReadKey) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(lib) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(strict) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(vars) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(warnings) for package: git-1.8.3.1-20.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl.x86_64 4:5.16.3-294.el7_6 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-libs = 4:5.16.3-294.el7_6 for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Scalar::Util) >= 1.10 for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Socket) >= 1.3 for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Carp) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Filter::Util::Call) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Pod::Simple::Search) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Pod::Simple::XHTML) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Scalar::Util) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Socket) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Storable) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Time::HiRes) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Time::Local) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(constant) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(threads) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(threads::shared) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-libs for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-macros for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libperl.so()(64bit) for package: 4:perl-5.16.3-294.el7_6.x86_64\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Error.noarch 1:0.17020-2.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Exporter.noarch 0:5.68-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-File-Path.noarch 0:2.09-2.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-File-Temp.noarch 0:0.23.01-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Getopt-Long.noarch 0:2.40-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Pod::Usage) >= 1.14 for package: perl-Getopt-Long-2.40-3.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Text::ParseWords) for package: perl-Getopt-Long-2.40-3.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Git.noarch 0:1.8.3.1-20.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-PathTools.x86_64 0:3.40-5.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-TermReadKey.x86_64 0:2.30-20.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Carp.noarch 0:1.26-244.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Filter.x86_64 0:1.49-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Pod-Simple.noarch 1:3.28-4.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Pod::Escapes) >= 1.04 for package: 1:perl-Pod-Simple-3.28-4.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Encode) for package: 1:perl-Pod-Simple-3.28-4.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Pod-Usage.noarch 0:1.63-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(Pod::Text) >= 3.15 for package: perl-Pod-Usage-1.63-3.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl-Pod-Perldoc for package: perl-Pod-Usage-1.63-3.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Socket.x86_64 0:2.010-4.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Storable.x86_64 0:2.45-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Text-ParseWords.noarch 0:3.29-4.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Time-HiRes.x86_64 4:1.9725-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Time-Local.noarch 0:1.2300-2.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-constant.noarch 0:1.27-2.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-libs.x86_64 4:5.16.3-294.el7_6 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-macros.x86_64 4:5.16.3-294.el7_6 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-threads.x86_64 0:1.87-4.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-threads-shared.x86_64 0:1.43-6.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Encode.x86_64 0:2.51-7.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Pod-Escapes.noarch 1:1.04-294.el7_6 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-Pod-Perldoc.noarch 0:3.20-4.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(HTTP::Tiny) for package: perl-Pod-Perldoc-3.20-4.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: perl(parent) for package: perl-Pod-Perldoc-3.20-4.el7.noarch\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-podlators.noarch 0:2.5.1-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-HTTP-Tiny.noarch 0:0.033-3.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package perl-parent.noarch 1:0.225-244.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                     Arch        Version                   Repository                             Size\cf1\highlight2 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  git                         x86_64      1.8.3.1-20.el7            rhui-REGION-rhel-server-releases      4.4 M\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  perl                        x86_64      4:5.16.3-294.el7_6        rhui-REGION-rhel-server-releases      8.0 M\cf1\highlight2 
+\par \cf0\highlight0  perl-Carp                   noarch      1.26-244.el7              rhui-REGION-rhel-server-releases       19 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Encode                 x86_64      2.51-7.el7                rhui-REGION-rhel-server-releases      1.5 M\cf1\highlight2 
+\par \cf0\highlight0  perl-Error                  noarch      1:0.17020-2.el7           rhui-REGION-rhel-server-releases       32 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Exporter               noarch      5.68-3.el7                rhui-REGION-rhel-server-releases       28 k\cf1\highlight2 
+\par \cf0\highlight0  perl-File-Path              noarch      2.09-2.el7                rhui-REGION-rhel-server-releases       27 k\cf1\highlight2 
+\par \cf0\highlight0  perl-File-Temp              noarch      0.23.01-3.el7             rhui-REGION-rhel-server-releases       56 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Filter                 x86_64      1.49-3.el7                rhui-REGION-rhel-server-releases       76 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Getopt-Long            noarch      2.40-3.el7                rhui-REGION-rhel-server-releases       56 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Git                    noarch      1.8.3.1-20.el7            rhui-REGION-rhel-server-releases       55 k\cf1\highlight2 
+\par \cf0\highlight0  perl-HTTP-Tiny              noarch      0.033-3.el7               rhui-REGION-rhel-server-releases       38 k\cf1\highlight2 
+\par \cf0\highlight0  perl-PathTools              x86_64      3.40-5.el7                rhui-REGION-rhel-server-releases       83 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Pod-Escapes            noarch      1:1.04-294.el7_6          rhui-REGION-rhel-server-releases       51 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Pod-Perldoc            noarch      3.20-4.el7                rhui-REGION-rhel-server-releases       87 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Pod-Simple             noarch      1:3.28-4.el7              rhui-REGION-rhel-server-releases      216 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Pod-Usage              noarch      1.63-3.el7                rhui-REGION-rhel-server-releases       27 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Scalar-List-Utils      x86_64      1.27-248.el7              rhui-REGION-rhel-server-releases       36 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Socket                 x86_64      2.010-4.el7               rhui-REGION-rhel-server-releases       49 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Storable               x86_64      2.45-3.el7                rhui-REGION-rhel-server-releases       77 k\cf1\highlight2 
+\par \cf0\highlight0  perl-TermReadKey            x86_64      2.30-20.el7               rhui-REGION-rhel-server-releases       31 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Text-ParseWords        noarch      3.29-4.el7                rhui-REGION-rhel-server-releases       14 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Time-HiRes             x86_64      4:1.9725-3.el7            rhui-REGION-rhel-server-releases       45 k\cf1\highlight2 
+\par \cf0\highlight0  perl-Time-Local             noarch      1.2300-2.el7              rhui-REGION-rhel-server-releases       24 k\cf1\highlight2 
+\par \cf0\highlight0  perl-constant               noarch      1.27-2.el7                rhui-REGION-rhel-server-releases       19 k\cf1\highlight2 
+\par \cf0\highlight0  perl-libs                   x86_64      4:5.16.3-294.el7_6        rhui-REGION-rhel-server-releases      688 k\cf1\highlight2 
+\par \cf0\highlight0  perl-macros                 x86_64      4:5.16.3-294.el7_6        rhui-REGION-rhel-server-releases       44 k\cf1\highlight2 
+\par \cf0\highlight0  perl-parent                 noarch      1:0.225-244.el7           rhui-REGION-rhel-server-releases       12 k\cf1\highlight2 
+\par \cf0\highlight0  perl-podlators              noarch      2.5.1-3.el7               rhui-REGION-rhel-server-releases      112 k\cf1\highlight2 
+\par \cf0\highlight0  perl-threads                x86_64      1.87-4.el7                rhui-REGION-rhel-server-releases       49 k\cf1\highlight2 
+\par \cf0\highlight0  perl-threads-shared         x86_64      1.43-6.el7                rhui-REGION-rhel-server-releases       39 k\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+30 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 16 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 59 M\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/31): git-1.8.3.1-20.el7.x86_64.rpm                                                   | 4.4 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (2/31): perl-Carp-1.26-244.el7.noarch.rpm                                               |  19 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (3/31): perl-5.16.3-294.el7_6.x86_64.rpm                                                | 8.0 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (4/31): perl-Error-0.17020-2.el7.noarch.rpm                                             |  32 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (5/31): perl-Exporter-5.68-3.el7.noarch.rpm                                             |  28 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (6/31): perl-File-Path-2.09-2.el7.noarch.rpm                                            |  27 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (7/31): perl-Encode-2.51-7.el7.x86_64.rpm                                               | 1.5 MB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (8/31): perl-File-Temp-0.23.01-3.el7.noarch.rpm                                         |  56 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (9/31): perl-Filter-1.49-3.el7.x86_64.rpm                                               |  76 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (10/31): perl-Getopt-Long-2.40-3.el7.noarch.rpm                                         |  56 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (11/31): perl-Git-1.8.3.1-20.el7.noarch.rpm                                             |  55 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (12/31): perl-HTTP-Tiny-0.033-3.el7.noarch.rpm                                          |  38 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (13/31): perl-PathTools-3.40-5.el7.x86_64.rpm                                           |  83 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (14/31): perl-Pod-Escapes-1.04-294.el7_6.noarch.rpm                                     |  51 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (15/31): perl-Pod-Perldoc-3.20-4.el7.noarch.rpm                                         |  87 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (16/31): perl-Pod-Usage-1.63-3.el7.noarch.rpm                                           |  27 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (17/31): perl-Pod-Simple-3.28-4.el7.noarch.rpm                                          | 216 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (18/31): perl-Socket-2.010-4.el7.x86_64.rpm                                             |  49 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (19/31): perl-Storable-2.45-3.el7.x86_64.rpm                                            |  77 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (20/31): perl-Scalar-List-Utils-1.27-248.el7.x86_64.rpm                                 |  36 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (21/31): perl-Text-ParseWords-3.29-4.el7.noarch.rpm                                     |  14 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (22/31): perl-TermReadKey-2.30-20.el7.x86_64.rpm                                        |  31 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (23/31): perl-Time-HiRes-1.9725-3.el7.x86_64.rpm                                        |  45 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (24/31): perl-constant-1.27-2.el7.noarch.rpm                                            |  19 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (25/31): perl-Time-Local-1.2300-2.el7.noarch.rpm                                        |  24 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (26/31): perl-libs-5.16.3-294.el7_6.x86_64.rpm                                          | 688 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (27/31): perl-parent-0.225-244.el7.noarch.rpm                                           |  12 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (28/31): perl-macros-5.16.3-294.el7_6.x86_64.rpm                                        |  44 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (29/31): perl-podlators-2.5.1-3.el7.noarch.rpm                                          | 112 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (30/31): perl-threads-shared-1.43-6.el7.x86_64.rpm                                      |  39 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 (31/31): perl-threads-1.87-4.el7.x86_64.rpm                                             |  49 kB  00:00:00\cf1\highlight2 
+\par \cf0\highlight0 ---------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                           10 MB/s |  16 MB  00:00:01\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:perl-parent-0.225-244.el7.noarch                                                         1/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-HTTP-Tiny-0.033-3.el7.noarch                                                          2/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-podlators-2.5.1-3.el7.noarch                                                          3/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Pod-Perldoc-3.20-4.el7.noarch                                                         4/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                                                   5/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Encode-2.51-7.el7.x86_64                                                              6/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Text-ParseWords-3.29-4.el7.noarch                                                     7/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Pod-Usage-1.63-3.el7.noarch                                                           8/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 4:perl-libs-5.16.3-294.el7_6.x86_64                                                        9/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 4:perl-macros-5.16.3-294.el7_6.x86_64                                                     10/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Storable-2.45-3.el7.x86_64                                                           11/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Exporter-5.68-3.el7.noarch                                                           12/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-constant-1.27-2.el7.noarch                                                           13/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Time-Local-1.2300-2.el7.noarch                                                       14/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Socket-2.010-4.el7.x86_64                                                            15/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Carp-1.26-244.el7.noarch                                                             16/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                                                     17/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-PathTools-3.40-5.el7.x86_64                                                          18/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Scalar-List-Utils-1.27-248.el7.x86_64                                                19/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-File-Temp-0.23.01-3.el7.noarch                                                       20/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-File-Path-2.09-2.el7.noarch                                                          21/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-threads-shared-1.43-6.el7.x86_64                                                     22/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-threads-1.87-4.el7.x86_64                                                            23/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:perl-Pod-Simple-3.28-4.el7.noarch                                                       24/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Filter-1.49-3.el7.x86_64                                                             25/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Getopt-Long-2.40-3.el7.noarch                                                        26/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 4:perl-5.16.3-294.el7_6.x86_64                                                            27/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : 1:perl-Error-0.17020-2.el7.noarch                                                         28/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-TermReadKey-2.30-20.el7.x86_64                                                       29/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : perl-Git-1.8.3.1-20.el7.noarch                                                            30/31\cf1\highlight2 
+\par \cf0\highlight0   Installing : git-1.8.3.1-20.el7.x86_64                                                                 31/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-HTTP-Tiny-0.033-3.el7.noarch                                                          1/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-threads-shared-1.43-6.el7.x86_64                                                      2/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Storable-2.45-3.el7.x86_64                                                            3/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:perl-Pod-Escapes-1.04-294.el7_6.noarch                                                   4/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Exporter-5.68-3.el7.noarch                                                            5/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-constant-1.27-2.el7.noarch                                                            6/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-PathTools-3.40-5.el7.x86_64                                                           7/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:perl-parent-0.225-244.el7.noarch                                                         8/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-TermReadKey-2.30-20.el7.x86_64                                                        9/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 4:perl-libs-5.16.3-294.el7_6.x86_64                                                       10/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-File-Temp-0.23.01-3.el7.noarch                                                       11/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Git-1.8.3.1-20.el7.noarch                                                            12/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Time-Local-1.2300-2.el7.noarch                                                       13/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 4:perl-macros-5.16.3-294.el7_6.x86_64                                                     14/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Socket-2.010-4.el7.x86_64                                                            15/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Carp-1.26-244.el7.noarch                                                             16/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:perl-Error-0.17020-2.el7.noarch                                                         17/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : git-1.8.3.1-20.el7.x86_64                                                                 18/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64                                                     19/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Scalar-List-Utils-1.27-248.el7.x86_64                                                20/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Pod-Usage-1.63-3.el7.noarch                                                          21/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Encode-2.51-7.el7.x86_64                                                             22/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Pod-Perldoc-3.20-4.el7.noarch                                                        23/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-podlators-2.5.1-3.el7.noarch                                                         24/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-File-Path-2.09-2.el7.noarch                                                          25/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-threads-1.87-4.el7.x86_64                                                            26/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 1:perl-Pod-Simple-3.28-4.el7.noarch                                                       27/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Filter-1.49-3.el7.x86_64                                                             28/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Getopt-Long-2.40-3.el7.noarch                                                        29/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : perl-Text-ParseWords-3.29-4.el7.noarch                                                    30/31\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 4:perl-5.16.3-294.el7_6.x86_64                                                            31/31\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   git.x86_64 0:1.8.3.1-20.el7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   perl.x86_64 4:5.16.3-294.el7_6                           perl-Carp.noarch 0:1.26-244.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Encode.x86_64 0:2.51-7.el7                          perl-Error.noarch 1:0.17020-2.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Exporter.noarch 0:5.68-3.el7                        perl-File-Path.noarch 0:2.09-2.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-File-Temp.noarch 0:0.23.01-3.el7                    perl-Filter.x86_64 0:1.49-3.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Getopt-Long.noarch 0:2.40-3.el7                     perl-Git.noarch 0:1.8.3.1-20.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-HTTP-Tiny.noarch 0:0.033-3.el7                      perl-PathTools.x86_64 0:3.40-5.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Pod-Escapes.noarch 1:1.04-294.el7_6                 perl-Pod-Perldoc.noarch 0:3.20-4.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Pod-Simple.noarch 1:3.28-4.el7                      perl-Pod-Usage.noarch 0:1.63-3.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Scalar-List-Utils.x86_64 0:1.27-248.el7             perl-Socket.x86_64 0:2.010-4.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Storable.x86_64 0:2.45-3.el7                        perl-TermReadKey.x86_64 0:2.30-20.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Text-ParseWords.noarch 0:3.29-4.el7                 perl-Time-HiRes.x86_64 4:1.9725-3.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-Time-Local.noarch 0:1.2300-2.el7                    perl-constant.noarch 0:1.27-2.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-libs.x86_64 4:5.16.3-294.el7_6                      perl-macros.x86_64 4:5.16.3-294.el7_6\cf1\highlight2 
+\par \cf0\highlight0   perl-parent.noarch 1:0.225-244.el7                       perl-podlators.noarch 0:2.5.1-3.el7\cf1\highlight2 
+\par \cf0\highlight0   perl-threads.x86_64 0:1.87-4.el7                         perl-threads-shared.x86_64 0:1.43-6.el7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 anaconda-ks.cfg  original-ks.cfg\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# git clone https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'testrepo1'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 6, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (6/6), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (3/3), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 6 (delta 0), reused 3 (delta 0), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (6/6), done.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 anaconda-ks.cfg  original-ks.cfg  \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# cd testrepo1/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# ls\cf1\highlight2 
+\par \cf0\highlight0 a  b  README.md\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# touvh 1 2\cf1\highlight2 
+\par \cf0\highlight0 -bash: touvh: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# touch 1 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? 1\cf1\highlight2 
+\par \cf0\highlight0 ?? 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git add .\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git status -s\cf1\highlight2 
+\par \cf0\highlight0 A  1\cf1\highlight2 
+\par \cf0\highlight0 A  2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git commit -m "3rd commit"\cf1\highlight2 
+\par \cf0\highlight0 [master 6fbaac3] 3rd commit\cf1\highlight2 
+\par \cf0\highlight0  Committer: root <root@ip-172-31-93-223.ec2.internal>\cf1\highlight2 
+\par \cf0\highlight0 Your name and email address were configured automatically based\cf1\highlight2 
+\par \cf0\highlight0 on your username and hostname. Please check that they are accurate.\cf1\highlight2 
+\par \cf0\highlight0 You can suppress this message by setting them explicitly:\cf1\highlight2 
+\par 
+\par \cf0\highlight0     git config --global user.name "Your Name"\cf1\highlight2 
+\par \cf0\highlight0     git config --global user.email you@example.com\cf1\highlight2 
+\par 
+\par \cf0\highlight0 After doing this, you may fix the identity used for this commit with:\cf1\highlight2 
+\par 
+\par \cf0\highlight0     git commit --amend --reset-author\cf1\highlight2 
+\par 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 1\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git config -l\cf1\highlight2 
+\par \cf0\highlight0 core.repositoryformatversion=0\cf1\highlight2 
+\par \cf0\highlight0 core.filemode=true\cf1\highlight2 
+\par \cf0\highlight0 core.bare=false\cf1\highlight2 
+\par \cf0\highlight0 core.logallrefupdates=true\cf1\highlight2 
+\par \cf0\highlight0 remote.origin.url=https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*\cf1\highlight2 
+\par \cf0\highlight0 branch.master.remote=origin\cf1\highlight2 
+\par \cf0\highlight0 branch.master.merge=refs/heads/master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]#  git config --global user.name "Tom"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]#  git config --global user.email "Tom@example.com"\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git config -l\cf1\highlight2 
+\par \cf0\highlight0 user.name=Tom\cf1\highlight2 
+\par \cf0\highlight0 user.email=Tom@example.com\cf1\highlight2 
+\par \cf0\highlight0 core.repositoryformatversion=0\cf1\highlight2 
+\par \cf0\highlight0 core.filemode=true\cf1\highlight2 
+\par \cf0\highlight0 core.bare=false\cf1\highlight2 
+\par \cf0\highlight0 core.logallrefupdates=true\cf1\highlight2 
+\par \cf0\highlight0 remote.origin.url=https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*\cf1\highlight2 
+\par \cf0\highlight0 branch.master.remote=origin\cf1\highlight2 
+\par \cf0\highlight0 branch.master.merge=refs/heads/master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git push origin master\cf1\highlight2 
+\par \cf0\highlight0 Username for 'https://github.com': dilipsun\cf1\highlight2 
+\par \cf0\highlight0 Password for 'https://dilipsun@github.com':\cf1\highlight2 
+\par \cf0\highlight0 Counting objects: 3, done.\cf1\highlight2 
+\par \cf0\highlight0 Compressing objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 Writing objects: 100% (2/2), 271 bytes | 0 bytes/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Total 2 (delta 0), reused 0 (delta 0)\cf1\highlight2 
+\par \cf0\highlight0 To https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0    b9f8cb7..6fbaac3  master -> master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git remote -v\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (fetch)\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (push)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git pull origin master\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 4, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (4/4), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (3/3), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 From https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0  * branch            master     -> FETCH_HEAD\cf1\highlight2 
+\par \cf0\highlight0 Updating 6fbaac3..325c7fc\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  test123 | 2 ++\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 2 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# git log\cf1\highlight2 
+\par \cf0\highlight0 commit 325c7fc4bc70731d58df19f5f56f73921d287fb9\cf1\highlight2 
+\par \cf0\highlight0 Author: dilipsun <dilip0527@gmail.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 10:12:13 2020 +0530\cf1\highlight2 
+\par 
+\par \cf0\highlight0     4th commit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 commit 6fbaac3dd3b9fbe74fbecd9f8c3d3cea507ec0f7\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-172-31-93-223.ec2.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 04:36:45 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     3rd commit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 commit b9f8cb79155eeef322b581d9147192610ee2079a\cf1\highlight2 
+\par \cf0\highlight0 Author: test <test@example.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 10:01:38 2020 +0530\cf1\highlight2 
+\par 
+\par \cf0\highlight0     1st commit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 commit 288280f76773c613092fedc1d4d3449104e690e1\cf1\highlight2 
+\par \cf0\highlight0 Author: dilipsun <dilip0527@gmail.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 10:00:50 2020 +0530\cf1\highlight2 
+\par 
+\par \cf0\highlight0     Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 testrepo1]# cd ..\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 anaconda-ks.cfg  original-ks.cfg  \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# mkdir test\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# cd test\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git init .\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /root/test/.git/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 3 root root  18 Jan  5 04:47 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-x---. 6 root root 208 Jan  5 04:47 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 7 root root 119 Jan  5 04:47 \cf8 .git\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote -v\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# touch 100 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? 100\cf1\highlight2 
+\par \cf0\highlight0 ?? 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git add .\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) d4dce34] c1\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 100\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# cd ..\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# ls\cf1\highlight2 
+\par \cf0\highlight0 anaconda-ks.cfg  original-ks.cfg  \cf8 test\cf0   \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# rm test\cf1\highlight2 
+\par \cf0\highlight0\f1 rm: cannot remove \lquote test\rquote : Is a directory\cf1\highlight2\f0 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# rm test -rf\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# mkdir test\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# cd test\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 2 root root   6 Jan  5 04:48 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-x---. 6 root root 208 Jan  5 04:48 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git init .\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /root/test/.git/\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 3 root root  18 Jan  5 04:48 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-x---. 6 root root 208 Jan  5 04:48 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 7 root root 119 Jan  5 04:48 \cf8 .git\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# touch 100 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git status\cf1\highlight2 
+\par \cf0\highlight0 # On branch master\cf1\highlight2 
+\par \cf0\highlight0 #\cf1\highlight2 
+\par \cf0\highlight0 # Initial commit\cf1\highlight2 
+\par \cf0\highlight0 #\cf1\highlight2 
+\par \cf0\highlight0 # Untracked files:\cf1\highlight2 
+\par \cf0\highlight0 #   (use "git add <file>..." to include in what will be committed)\cf1\highlight2 
+\par \cf0\highlight0 #\cf1\highlight2 
+\par \cf0\highlight0 #       100\cf1\highlight2 
+\par \cf0\highlight0 #       200\cf1\highlight2 
+\par \cf0\highlight0 nothing added to commit but untracked files present (use "git add" to track)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? 100\cf1\highlight2 
+\par \cf0\highlight0 ?? 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git add .\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 fatal: bad default revision 'HEAD'\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git branch\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) 840a4c6] c1\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 100\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 200\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git branch\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote -v\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote add origin https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote -v\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (fetch)\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (push)\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote rm origin\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote -v\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git remote add origin https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git branch\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git push origin master\cf1\highlight2 
+\par \cf0\highlight0 Username for 'https://github.com': dilipsun\cf1\highlight2 
+\par \cf0\highlight0 Password for 'https://dilipsun@github.com':\cf1\highlight2 
+\par \cf0\highlight0 To https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0  ! [rejected]        master -> master (fetch first)\cf1\highlight2 
+\par \cf0\highlight0 error: failed to push some refs to 'https://github.com/dilipsun/testrepo1.git'\cf1\highlight2 
+\par \cf0\highlight0 hint: Updates were rejected because the remote contains work that you do\cf1\highlight2 
+\par \cf0\highlight0 hint: not have locally. This is usually caused by another repository pushing\cf1\highlight2 
+\par \cf0\highlight0 hint: to the same ref. You may want to first merge the remote changes (e.g.,\cf1\highlight2 
+\par \cf0\highlight0 hint: 'git pull') before pushing again.\cf1\highlight2 
+\par \cf0\highlight0 hint: See the 'Note about fast-forwards' in 'git push --help' for details.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git pull origin master\cf1\highlight2 
+\par \cf0\highlight0 warning: no common commits\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 11, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (11/11), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (7/7), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 11 (delta 2), reused 3 (delta 0), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (11/11), done.\cf1\highlight2 
+\par \cf0\highlight0 From https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0  * branch            master     -> FETCH_HEAD\cf1\highlight2 
+\par \cf0\highlight0 Merge made by the 'recursive' strategy.\cf1\highlight2 
+\par \cf0\highlight0  1         | 0\cf1\highlight2 
+\par \cf0\highlight0  2         | 0\cf1\highlight2 
+\par \cf0\highlight0  README.md | 1 +\cf1\highlight2 
+\par \cf0\highlight0  a         | 0\cf1\highlight2 
+\par \cf0\highlight0  b         | 0\cf1\highlight2 
+\par \cf0\highlight0  test123   | 2 ++\cf1\highlight2 
+\par \cf0\highlight0  6 files changed, 3 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 1\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 README.md\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git status -s\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git log --online\cf1\highlight2 
+\par \cf0\highlight0 fatal: unrecognized argument: --online\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 ffd0e4d Merge branch 'master' of https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# git push origin master\cf1\highlight2 
+\par \cf0\highlight0 Username for 'https://github.com': dilipsun\cf1\highlight2 
+\par \cf0\highlight0 Password for 'https://dilipsun@github.com':\cf1\highlight2 
+\par \cf0\highlight0 Counting objects: 5, done.\cf1\highlight2 
+\par \cf0\highlight0 Compressing objects: 100% (4/4), done.\cf1\highlight2 
+\par \cf0\highlight0 Writing objects: 100% (4/4), 463 bytes | 0 bytes/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Total 4 (delta 1), reused 0 (delta 0)\cf1\highlight2 
+\par \cf0\highlight0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.\cf1\highlight2 
+\par \cf0\highlight0 To https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0    325c7fc..ffd0e4d  master -> master\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 8\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 3 root root 108 Jan  5 04:55 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 dr-xr-x---. 6 root root 208 Jan  5 04:48 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:55 1\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:48 100\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:55 2\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:48 200\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:55 a\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root   0 Jan  5 04:55 b\cf1\highlight2 
+\par \cf0\highlight0 drwxr-xr-x. 8 root root 201 Jan  5 04:55 \cf8 .git\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root  11 Jan  5 04:55 README.md\cf1\highlight2 
+\par \cf0\highlight0 -rw-r--r--. 1 root root  15 Jan  5 04:55 test123\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# mkdir\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 test]# cd\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# for i in tom jerry gitadmin\cf1\highlight2 
+\par \cf0\highlight0 > do\cf1\highlight2 
+\par \cf0\highlight0 > useradd $i\cf1\highlight2 
+\par \cf0\highlight0 > echo test123 |passwd --stdin $i\cf1\highlight2 
+\par \cf0\highlight0 > done\cf1\highlight2 
+\par \cf0\highlight0 Changing password for user tom.\cf1\highlight2 
+\par \cf0\highlight0 passwd: all authentication tokens updated successfully.\cf1\highlight2 
+\par \cf0\highlight0 Changing password for user jerry.\cf1\highlight2 
+\par \cf0\highlight0 passwd: all authentication tokens updated successfully.\cf1\highlight2 
+\par \cf0\highlight0 Changing password for user gitadmin.\cf1\highlight2 
+\par \cf0\highlight0 passwd: all authentication tokens updated successfully.\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# su - tom\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$ ssh-keygen\cf1\highlight2 
+\par \cf0\highlight0 Generating public/private rsa key pair.\cf1\highlight2 
+\par \cf0\highlight0 Enter file in which to save the key (/home/tom/.ssh/id_rsa):\cf1\highlight2 
+\par \cf0\highlight0 Created directory '/home/tom/.ssh'.\cf1\highlight2 
+\par \cf0\highlight0 Enter passphrase (empty for no passphrase):\cf1\highlight2 
+\par \cf0\highlight0 Enter same passphrase again:\cf1\highlight2 
+\par \cf0\highlight0 Your identification has been saved in /home/tom/.ssh/id_rsa.\cf1\highlight2 
+\par \cf0\highlight0 Your public key has been saved in /home/tom/.ssh/id_rsa.pub.\cf1\highlight2 
+\par \cf0\highlight0 The key fingerprint is:\cf1\highlight2 
+\par \cf0\highlight0 SHA256:gAQNW4BbTch9mLUA+yp62oeEbC11d5zBKi1V/PX6C14 tom@ip-172-31-93-223.ec2.internal\cf1\highlight2 
+\par \cf0\highlight0 The key's randomart image is:\cf1\highlight2 
+\par \cf0\highlight0 +---[RSA 2048]----+\cf1\highlight2 
+\par \cf0\highlight0 | o=@=+. +.       |\cf1\highlight2 
+\par \cf0\highlight0 |. +=*o.o +   .   |\cf1\highlight2 
+\par \cf0\highlight0 | oo ..= o + . .  |\cf1\highlight2 
+\par \cf0\highlight0 |.  o + = + .   . |\cf1\highlight2 
+\par \cf0\highlight0 |..o o + S     .  |\cf1\highlight2 
+\par \cf0\highlight0 |.+.o         .   |\cf1\highlight2 
+\par \cf0\highlight0 |o.o.         ..E |\cf1\highlight2 
+\par \cf0\highlight0 |.oo .       . o. |\cf1\highlight2 
+\par \cf0\highlight0 |oo..         . ..|\cf1\highlight2 
+\par \cf0\highlight0 +----[SHA256]-----+\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$ ssh-copy-id -i gitadmin@test\cf1\highlight2 
+\par \cf0\highlight0 /bin/ssh-copy-id: INFO: Source of key(s) to be installed: "/home/tom/.ssh/id_rsa.pub"\cf1\highlight2 
+\par \cf0\highlight0 The authenticity of host 'test (fe80::1048:dff:feb3:bbab%eth0)' can't be established.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is SHA256:pmh0ksVnyJtbg/ceADMEocsai4m3FB0m/EL/emr8c1k.\cf1\highlight2 
+\par \cf0\highlight0 ECDSA key fingerprint is MD5:13:be:96:e7:82:77:f2:e8:ba:74:f7:ef:2b:bb:b4:e2.\cf1\highlight2 
+\par \cf0\highlight0 Are you sure you want to continue connecting (yes/no)? yes\cf1\highlight2 
+\par \cf0\highlight0 /bin/ssh-copy-id: INFO: attempting to log in with the new key(s), to filter out any that are already installed\cf1\highlight2 
+\par \cf0\highlight0 /bin/ssh-copy-id: INFO: 1 key(s) remain to be installed -- if you are prompted now it is to install the new keys\cf1\highlight2 
+\par \cf0\highlight0 gitadmin@test's password:\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Number of key(s) added: 1\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Now try logging into the machine, with:   "ssh 'gitadmin@test'"\cf1\highlight2 
+\par \cf0\highlight0 and check to make sure that only the key(s) you wanted were added.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$ ssh 'gitadmin@test'\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:07:18 2020 from fe80::1048:dff:feb3:bbab%eth0\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ logout\cf1\highlight2 
+\par \cf0\highlight0 Connection to test closed.\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$ mkdir test\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 ~]$ cd test\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 0\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 2 tom tom  6 Jan  5 05:07 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 drwx------. 4 tom tom 86 Jan  5 05:07 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ touch 1 2\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git init .\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/tom/test/.git/\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? 1\cf1\highlight2 
+\par \cf0\highlight0 ?? 2\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git add .\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git log\cf1\highlight2 
+\par \cf0\highlight0 fatal: bad default revision 'HEAD'\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git brnach\cf1\highlight2 
+\par \cf0\highlight0 git: 'brnach' is not a git command. See 'git --help'.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Did you mean this?\cf1\highlight2 
+\par \cf0\highlight0         branch\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git commit -m "c1"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 *** Please tell me who you are.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Run\cf1\highlight2 
+\par 
+\par \cf0\highlight0   git config --global user.email "you@example.com"\cf1\highlight2 
+\par \cf0\highlight0   git config --global user.name "Your Name"\cf1\highlight2 
+\par 
+\par \cf0\highlight0 to set your account's default identity.\cf1\highlight2 
+\par \cf0\highlight0 Omit --global to set the identity only in this repository.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 fatal: empty ident name (for <tom@test.(none)>) not allowed\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git config --global user.email "you@example.com"\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$   git config --global user.name "Your Name"\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$   git config --global user.name "tom"\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git config --global user.email "tom@example.com"\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git config -l\cf1\highlight2 
+\par \cf0\highlight0 user.email=tom@example.com\cf1\highlight2 
+\par \cf0\highlight0 user.name=tom\cf1\highlight2 
+\par \cf0\highlight0 core.repositoryformatversion=0\cf1\highlight2 
+\par \cf0\highlight0 core.filemode=true\cf1\highlight2 
+\par \cf0\highlight0 core.bare=false\cf1\highlight2 
+\par \cf0\highlight0 core.logallrefupdates=true\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) 38eff18] c1\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 1\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git log\cf1\highlight2 
+\par \cf0\highlight0 commit 38eff1822192e16b1d2d2180d1c2a46f008c3ff6\cf1\highlight2 
+\par \cf0\highlight0 Author: tom <tom@example.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 05:09:27 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git remote -v\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git remote add origin gitadmin@test:testrepo\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git remote -v\cf1\highlight2 
+\par \cf0\highlight0 origin  gitadmin@test:testrepo (fetch)\cf1\highlight2 
+\par \cf0\highlight0 origin  gitadmin@test:testrepo (push)\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$ git push origin master\cf1\highlight2 
+\par \cf0\highlight0 Counting objects: 3, done.\cf1\highlight2 
+\par \cf0\highlight0 Compressing objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 Writing objects: 100% (3/3), 195 bytes | 0 bytes/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Total 3 (delta 0), reused 0 (delta 0)\cf1\highlight2 
+\par \cf0\highlight0 To gitadmin@test:testrepo\cf1\highlight2 
+\par \cf0\highlight0  * [new branch]      master -> master\cf1\highlight2 
+\par \cf0\highlight0 [tom@ip-172-31-93-223 test]$\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:15:41 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:15:45 UTC 2020 on pts/1\cf1\highlight2 
+\par \cf0\highlight0 [root@test ~]# su - tom\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:04:08 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd test/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git fetch origin master\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 3, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 2 (delta 0), reused 0 (delta 0)\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 From test:testrepo\cf1\highlight2 
+\par \cf0\highlight0  * branch            master     -> FETCH_HEAD\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git cat-file -p FETCH_HEAD\cf1\highlight2 
+\par \cf0\highlight0 tree 8d3fced30a69cf7fd59636b933e0fc40af828ac9\cf1\highlight2 
+\par \cf0\highlight0 parent 38eff1822192e16b1d2d2180d1c2a46f008c3ff6\cf1\highlight2 
+\par \cf0\highlight0 author jerry <jerry@example.com> 1578201541 +0000\cf1\highlight2 
+\par \cf0\highlight0 committer jerry <jerry@example.com> 1578201541 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0 jerry commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git cat-file -p 8d3fced30a69cf7fd59636b933e0fc40af828ac9\cf1\highlight2 
+\par \cf0\highlight0 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    1\cf1\highlight2 
+\par \cf0\highlight0 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    2\cf1\highlight2 
+\par \cf0\highlight0 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git merge FETCH_HEAD\cf1\highlight2 
+\par \cf0\highlight0 Updating 38eff18..d36ee6a\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  hello | 0\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2  hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:21:25 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ su -\cf1\highlight2 
+\par \cf0\highlight0 Password:\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:21:30 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [root@test ~]# su - tom\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:21:33 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cd ..\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ rm -rf test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ mkdir test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git init .\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/tom/test/.git/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cat test\cf1\highlight2 
+\par \cf0\highlight0 hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git add . && git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) bcb66db] c1\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --online\cf1\highlight2 
+\par \cf0\highlight0 fatal: unrecognized argument: --online\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --onwline\cf1\highlight2 
+\par \cf0\highlight0 fatal: unrecognized argument: --onwline\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch f1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ca test\cf1\highlight2 
+\par \cf0\highlight0 -bash: ca: command not found\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cat test\cf1\highlight2 
+\par \cf0\highlight0 hello\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cat >> new\cf1\highlight2 
+\par \cf0\highlight0 hello world\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 ?? new\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git add . && git commit -m "f1 commit"\cf1\highlight2 
+\par \cf0\highlight0 [f1 8deccdc] f1 commit\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 new\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout dev\cf1\highlight2 
+\par \cf0\highlight0 error: pathspec 'dev' did not match any file(s) known to git.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git merge f1\cf1\highlight2 
+\par \cf0\highlight0 Updating bcb66db..8deccdc\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  new | 1 +\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 new\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 new  test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 new  test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout -b f2\cf1\highlight2 
+\par \cf0\highlight0 Switched to a new branch 'f2'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0 * f2\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ touch a b\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git add . &&git commit -m "f2 commit"\cf1\highlight2 
+\par \cf0\highlight0 [f2 c1303ce] f2 commit\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git merge f2\cf1\highlight2 
+\par \cf0\highlight0 Updating 8deccdc..c1303ce\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  a | 0\cf1\highlight2 
+\par \cf0\highlight0  b | 0\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 c1303ce f2 commit\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0   f2\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   f2\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git merge f2\cf1\highlight2 
+\par \cf0\highlight0 Updating 8deccdc..c1303ce\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  a | 0\cf1\highlight2 
+\par \cf0\highlight0  b | 0\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 a  b  new  test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 c1303ce f2 commit\cf1\highlight2 
+\par \cf0\highlight0 8deccdc f1 commit\cf1\highlight2 
+\par \cf0\highlight0 bcb66db c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ ls\cf1\highlight2 
+\par \cf0\highlight0 a  b  new  test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test test]$ cd ..\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ mkdir newrepo\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd newrepo\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ ls\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git init .\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/tom/newrepo/.git/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 fatal: bad default revision 'HEAD'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 line1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git add . && git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) 52ce156] c1\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git checkout -b dev\cf1\highlight2 
+\par \cf0\highlight0 Switched to a new branch 'dev'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ ls\cf1\highlight2 
+\par \cf0\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * dev\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 line2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat test\cf1\highlight2 
+\par \cf0\highlight0 line1\cf1\highlight2 
+\par \cf0\highlight0 line2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git add .\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git commmit -m "c2"\cf1\highlight2 
+\par \cf0\highlight0 git: 'commmit' is not a git command. See 'git --help'.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Did you mean this?\cf1\highlight2 
+\par \cf0\highlight0         commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git commit -m "c2"\cf1\highlight2 
+\par \cf0\highlight0 [dev 0c2d715] c2\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 0c2d715 c2\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat\cf1\highlight2 
+\par \cf0\highlight0 .git/ test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat\cf1\highlight2 
+\par \cf0\highlight0 .git/ test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat test\cf1\highlight2 
+\par \cf0\highlight0 line1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ vim test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git add .&& git commit -m "c3"\cf1\highlight2 
+\par \cf0\highlight0 [master 387f2c7] c3\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 387f2c7 c3\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git checkout dev\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'dev'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 0c2d715 c2\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 387f2c7 c3\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git merge dev\cf1\highlight2 
+\par \cf0\highlight0 Auto-merging test\cf1\highlight2 
+\par \cf0\highlight0 CONFLICT (content): Merge conflict in test\cf1\highlight2 
+\par \cf0\highlight0 Automatic merge failed; fix conflicts and then commit the result.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ vim test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 UU test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git add .\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 M  test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git commit -m "c4"\cf1\highlight2 
+\par \cf0\highlight0 [master 8bb6075] c4\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 8bb6075 c4\cf1\highlight2 
+\par \cf0\highlight0 387f2c7 c3\cf1\highlight2 
+\par \cf0\highlight0 0c2d715 c2\cf1\highlight2 
+\par \cf0\highlight0 52ce156 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ ls\cf1\highlight2 
+\par \cf0\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$ cat test\cf1\highlight2 
+\par \cf0\highlight0 line1\cf1\highlight2 
+\par \cf0\highlight0 line3\cf1\highlight2 
+\par \cf0\highlight0 line2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test newrepo]$\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:52:49 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:52:57 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [root@test ~]# su - tom\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:53:00 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 newrepo\cf0   \cf8 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ mkdir oldrepo\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd oldrepo/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ cat > test\cf1\highlight2 
+\par \cf0\highlight0 line1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git add . && git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 fatal: Not a git repository (or any of the parent directories): .git\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git init . && git add . && git commit -m "c1"\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/tom/oldrepo/.git/\cf1\highlight2 
+\par \cf0\highlight0 [master (root-commit) 33d8218] c1\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git checkout -b dev\cf1\highlight2 
+\par \cf0\highlight0 Switched to a new branch 'dev'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 line2\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git add . && git commit -m "c2"\cf1\highlight2 
+\par \cf0\highlight0 [dev 0fead97] c2\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ cat >> test\cf1\highlight2 
+\par \cf0\highlight0 line3\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git add . && git commit -m "c3"\cf1\highlight2 
+\par \cf0\highlight0 [master b4bd17d] c3\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 b4bd17d c3\cf1\highlight2 
+\par \cf0\highlight0 33d8218 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git checkout dev\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'dev'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 0fead97 c2\cf1\highlight2 
+\par \cf0\highlight0 33d8218 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git pull origin master\cf1\highlight2 
+\par \cf0\highlight0 fatal: 'origin' does not appear to be a git repository\cf1\highlight2 
+\par \cf0\highlight0 fatal: Could not read from remote repository.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Please make sure you have the correct access rights\cf1\highlight2 
+\par \cf0\highlight0 and the repository exists.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * dev\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git remote -v\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git merge master\cf1\highlight2 
+\par \cf0\highlight0 Auto-merging test\cf1\highlight2 
+\par \cf0\highlight0 CONFLICT (content): Merge conflict in test\cf1\highlight2 
+\par \cf0\highlight0 Automatic merge failed; fix conflicts and then commit the result.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ vim a\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ vim test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git status -s\cf1\highlight2 
+\par \cf0\highlight0 UU test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git add .\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git commit -m "c4"\cf1\highlight2 
+\par \cf0\highlight0 [dev 7e2f7e7] c4\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 7e2f7e7 c4\cf1\highlight2 
+\par \cf0\highlight0 b4bd17d c3\cf1\highlight2 
+\par \cf0\highlight0 0fead97 c2\cf1\highlight2 
+\par \cf0\highlight0 33d8218 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 b4bd17d c3\cf1\highlight2 
+\par \cf0\highlight0 33d8218 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git merge  dev\cf1\highlight2 
+\par \cf0\highlight0 Updating b4bd17d..7e2f7e7\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  test | 1 +\cf1\highlight2 
+\par \cf0\highlight0  1 file changed, 1 insertion(+)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 7e2f7e7 c4\cf1\highlight2 
+\par \cf0\highlight0 b4bd17d c3\cf1\highlight2 
+\par \cf0\highlight0 0fead97 c2\cf1\highlight2 
+\par \cf0\highlight0 33d8218 c1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test oldrepo]$ cd\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ git clone https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'testrepo1'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 15, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (15/15), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (10/10), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 15 (delta 3), reused 8 (delta 1), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (15/15), done.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 newrepo\cf0   \cf8 oldrepo\cf0   \cf8 test\cf0   \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd testrepo1/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch f1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ touch nnn mmm\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git add .&& git commit -m "f1 commit"\cf1\highlight2 
+\par \cf0\highlight0 [f1 55b908d] f1 commit\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 mmm\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 nnn\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ cd ..\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd -\cf1\highlight2 
+\par \cf0\highlight0 /home/tom/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  mmm  nnn  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -r\cf1\highlight2 
+\par \cf0\highlight0   origin/HEAD -> origin/master\cf1\highlight2 
+\par \cf0\highlight0   origin/master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -a\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0   remotes/origin/HEAD -> origin/master\cf1\highlight2 
+\par \cf0\highlight0   remotes/origin/master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git push origin f1\cf1\highlight2 
+\par \cf0\highlight0 Username for 'https://github.com': dilipsun\cf1\highlight2 
+\par \cf0\highlight0 Password for 'https://dilipsun@github.com':\cf1\highlight2 
+\par \cf0\highlight0 remote: Invalid username or password.\cf1\highlight2 
+\par \cf0\highlight0 fatal: Authentication failed for 'https://github.com/dilipsun/testrepo1.git/'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git push origin f1\cf1\highlight2 
+\par \cf0\highlight0 Username for 'https://github.com': dilipsun\cf1\highlight2 
+\par \cf0\highlight0 Password for 'https://dilipsun@github.com':\cf1\highlight2 
+\par \cf0\highlight0 Counting objects: 3, done.\cf1\highlight2 
+\par \cf0\highlight0 Compressing objects: 100% (2/2), done.\cf1\highlight2 
+\par \cf0\highlight0 Writing objects: 100% (2/2), 224 bytes | 0 bytes/s, done.\cf1\highlight2 
+\par \cf0\highlight0 Total 2 (delta 1), reused 0 (delta 0)\cf1\highlight2 
+\par \cf0\highlight0 remote: Resolving deltas: 100% (1/1), completed with 1 local object.\cf1\highlight2 
+\par \cf0\highlight0 remote:\cf1\highlight2 
+\par \cf0\highlight0 remote: Create a pull request for 'f1' on GitHub by visiting:\cf1\highlight2 
+\par \cf0\highlight0 remote:      https://github.com/dilipsun/testrepo1/pull/new/f1\cf1\highlight2 
+\par \cf0\highlight0 remote:\cf1\highlight2 
+\par \cf0\highlight0 To https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0  * [new branch]      f1 -> f1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -a\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0   remotes/origin/HEAD -> origin/master\cf1\highlight2 
+\par \cf0\highlight0   remotes/origin/f1\cf1\highlight2 
+\par \cf0\highlight0   remotes/origin/master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 06:21:32 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 06:21:37 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 Last failed login: Sun Jan  5 06:47:35 UTC 2020 from 222.186.30.59 on ssh:notty\cf1\highlight2 
+\par \cf0\highlight0 There were 178 failed login attempts since the last successful login.\cf1\highlight2 
+\par \cf0\highlight0 [root@test ~]# su - tom\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 06:21:40 UTC 2020 on pts/0\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 newrepo\cf0   \cf8 oldrepo\cf0   \cf8 test\cf0   \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd testrepo1/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  mmm  nnn  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 55b908d f1 commit\cf1\highlight2 
+\par \cf0\highlight0 ffd0e4d Merge branch 'master' of https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout 6fbaac3 -b test\cf1\highlight2 
+\par \cf0\highlight0 Switched to a new branch 'test'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 * test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2  a  b  README.md\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git show 6fbaac3\cf1\highlight2 
+\par \cf0\highlight0 commit 6fbaac3dd3b9fbe74fbecd9f8c3d3cea507ec0f7\cf1\highlight2 
+\par \cf0\highlight0 Author: root <root@ip-172-31-93-223.ec2.internal>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 04:36:45 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     3rd commit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 diff --git a/1 b/1\cf1\highlight2 
+\par \cf0\highlight0 new file mode 100644\cf1\highlight2 
+\par \cf0\highlight0 index 0000000..e69de29\cf1\highlight2 
+\par \cf0\highlight0 diff --git a/2 b/2\cf1\highlight2 
+\par \cf0\highlight0 new file mode 100644\cf1\highlight2 
+\par \cf0\highlight0 index 0000000..e69de29\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 * test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -d f1\cf1\highlight2 
+\par \cf0\highlight0 error: The branch 'f1' is not fully merged.\cf1\highlight2 
+\par \cf0\highlight0 If you are sure you want to delete it, run 'git branch -D f1'.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -D f1\cf1\highlight2 
+\par \cf0\highlight0 Deleted branch f1 (was 55b908d).\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 * test\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch -m test f1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2  a  b  README.md\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git revert b9f8cb7\cf1\highlight2 
+\par \cf0\highlight0 [f1 7f55db9] Revert "1st commit"\cf1\highlight2 
+\par \cf0\highlight0  2 files changed, 0 insertions(+), 0 deletions(-)\cf1\highlight2 
+\par \cf0\highlight0  delete mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  delete mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 7f55db9 Revert "1st commit"\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  2  README.md\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git reset --help\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git reset --hard 288280f\cf1\highlight2 
+\par \cf0\highlight0 HEAD is now at 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0   f1\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 ffd0e4d Merge branch 'master' of https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git merge f1\cf1\highlight2 
+\par \cf0\highlight0 Already up-to-date.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0   master\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout dev\cf1\highlight2 
+\par \cf0\highlight0 error: pathspec 'dev' did not match any file(s) known to git.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout f1\cf1\highlight2 
+\par \cf0\highlight0 Already on 'f1'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git merge master\cf1\highlight2 
+\par \cf0\highlight0 Updating 288280f..ffd0e4d\cf1\highlight2 
+\par \cf0\highlight0 Fast-forward\cf1\highlight2 
+\par \cf0\highlight0  1       | 0\cf1\highlight2 
+\par \cf0\highlight0  100     | 0\cf1\highlight2 
+\par \cf0\highlight0  2       | 0\cf1\highlight2 
+\par \cf0\highlight0  200     | 0\cf1\highlight2 
+\par \cf0\highlight0  a       | 0\cf1\highlight2 
+\par \cf0\highlight0  b       | 0\cf1\highlight2 
+\par \cf0\highlight0  test123 | 2 ++\cf1\highlight2 
+\par \cf0\highlight0  7 files changed, 2 insertions(+)\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 1\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 100\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 2\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 200\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 a\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 b\cf1\highlight2 
+\par \cf0\highlight0  create mode 100644 test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 ffd0e4d Merge branch 'master' of https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git checkout master\cf1\highlight2 
+\par \cf0\highlight0 Switched to branch 'master'\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git merge f1\cf1\highlight2 
+\par \cf0\highlight0 Already up-to-date.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git log --oneline\cf1\highlight2 
+\par \cf0\highlight0 ffd0e4d Merge branch 'master' of https://github.com/dilipsun/testrepo1\cf1\highlight2 
+\par \cf0\highlight0 840a4c6 c1\cf1\highlight2 
+\par \cf0\highlight0 325c7fc 4th commit\cf1\highlight2 
+\par \cf0\highlight0 6fbaac3 3rd commit\cf1\highlight2 
+\par \cf0\highlight0 b9f8cb7 1st commit\cf1\highlight2 
+\par \cf0\highlight0 288280f Initial commit\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$  cd ..\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ git clone https://github.com/dilipsun/testrepo1.git -b f1\cf1\highlight2 
+\par \cf0\highlight0 fatal: destination path 'testrepo1' already exists and is not an empty directory.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 newrepo\cf0   \cf8 oldrepo\cf0   \cf8 test\cf0   \cf8 testrepo1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ rm testrepo1/\cf1\highlight2 
+\par \cf0\highlight0\f1 rm: cannot remove \lquote testrepo1/\rquote : Is a directory\cf1\highlight2\f0 
+\par \cf0\highlight0 [tom@test ~]$ rm testrepo1 -rf\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ git clone https://github.com/dilipsun/testrepo1.git\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'testrepo1'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 22, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (22/22), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (16/16), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 22 (delta 5), reused 8 (delta 1), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (22/22), done.\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ rm -rf testrepo1/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ git clone https://github.com/dilipsun/testrepo1.git  -b f1\cf1\highlight2 
+\par \cf0\highlight0 Cloning into 'testrepo1'...\cf1\highlight2 
+\par \cf0\highlight0 remote: Enumerating objects: 22, done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Counting objects: 100% (22/22), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Compressing objects: 100% (16/16), done.\cf1\highlight2 
+\par \cf0\highlight0 Unpacking objects: 100% (22/22), done.\cf1\highlight2 
+\par \cf0\highlight0 remote: Total 22 (delta 5), reused 8 (delta 1), pack-reused 0\cf1\highlight2 
+\par \cf0\highlight0 [tom@test ~]$ cd testrepo1/\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ ls\cf1\highlight2 
+\par \cf0\highlight0 1  100  2  200  a  b  mmm  nnn  README.md  test123\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git remote -v\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (fetch)\cf1\highlight2 
+\par \cf0\highlight0 origin  https://github.com/dilipsun/testrepo1.git (push)\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * f1\cf1\highlight2 
+\par \cf0\highlight0 [tom@test testrepo1]$\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 

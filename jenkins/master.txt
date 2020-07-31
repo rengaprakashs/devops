@@ -1,0 +1,22 @@
+echo "Type hostname to set"
+read hostname
+hostnamectl set-hostname $hostname
+echo "disable selinux"
+setenforce 0
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+echo "Installing basic package like vim and wget"
+yum install wget vim unzip -y
+#======update ssh config for AWS=====
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/#PubkeyAuthentication/PubkeyAuthentication/' /etc/ssh/sshd_config
+
+#======Java install=============
+yum install java java-devel -y 
+
+#=======Install Jenkins==========
+wget -O /etc/yum.repos.d/jenkins.repo http://pkg.jenkins-ci.org/redhat/jenkins.repo
+rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
+#yum list jenkins --show-duplicates(to list versions of Jenkins)
+yum install jenkins -y 
+systemctl start jenkins && systemctl enable jenkins
+#on master

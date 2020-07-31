@@ -1,0 +1,24 @@
+#!/bin/bash
+#All nodes
+echo "hostname"
+read host
+#All nodes
+echo "update selinux"
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+#All nodes
+echo "Install basic packages"
+yum install wget vim -y
+#Control/master node
+echo "Install epel and ansible package"
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
+yum install ansible -y
+echo "adding ansible user"
+useradd renga2 && echo test123|passwd --stdin renga2
+echo "update ssh config"
+sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/' /etc/ssh/sshd_config
+sed -i 's/#PubkeyAuthentication/PubkeyAuthentication/' /etc/ssh/sshd_config
+echo "restart sshd"
+systemctl restart sshd
+echo "add sudo to renga2"
+echo "renga2        ALL=(ALL)       NOPASSWD: 
+

@@ -1,0 +1,21 @@
+echo "hostname"
+read host
+#All nodes
+echo "update selinux"
+sed -i 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
+#All nodes
+echo "Install basic packages"
+yum install wget vim -y
+#Control/master node
+echo "Install epel"
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm -y
+echo "stroagedriver"
+yum install -y yum-utils   device-mapper-persistent-data   lvm2 
+yum install http://ftp.riken.jp/Linux/cern/centos/7/extras/x86_64/Packages/container-selinux-2.74-1.el7.noarch.rpm -y
+sudo echo 'https://storebits.docker.com/ee/centos/sub-e4c7b6ee-6060-4af2-b8dd-60d1b63ab766' > /etc/yum/vars/dockerurl
+yum-config-manager     --add-repo     https://storebits.docker.com/ee/centos/sub-e4c7b6ee-6060-4af2-b8dd-60d1b63ab766/docker-ee.repo
+yum install docker-ee docker-ee-cli containerd.io -y
+#start docker
+systemctl start docker
+#enable docker
+systemctl enable docker

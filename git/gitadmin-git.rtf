@@ -1,0 +1,199 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang16393{\fonttbl{\f0\fmodern Consolas;}{\f1\fmodern\fcharset0 Consolas;}{\f2\fnil\fcharset129 Courier New;}}
+{\colortbl ;\red20\green20\blue20;\red142\green142\blue142;\red16\green158\blue98;\red148\green146\blue12;\red170\green51\blue170;\red170\green64\blue64;\red56\green136\blue159;\red18\green124\blue155;\red36\green36\blue36;}
+\viewkind4\uc1\pard\f0\fs20 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:03:23 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@ip-172-31-93-223 ~]$ sudo su -\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:03:55 UTC 2020 on pts/1\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# su - gitadmin\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@ip-172-31-93-223 ~]$ logout\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# vim /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0 -bash: vim: command not found\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# yum install vim -y\cf1\highlight2 
+\par \cf0\highlight0 Loaded plugins: amazon-id, rhui-lb, search-disabled-repos\cf1\highlight2 
+\par \cf0\highlight0 Resolving Dependencies\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package vim-enhanced.x86_64 2:7.4.629-6.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: vim-common = 2:7.4.629-6.el7 for package: 2:vim-enhanced-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: libgpm.so.2()(64bit) for package: 2:vim-enhanced-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package gpm-libs.x86_64 0:1.20.7-6.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 ---> Package vim-common.x86_64 2:7.4.629-6.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Processing Dependency: vim-filesystem for package: 2:vim-common-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0 --> Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 ---> Package vim-filesystem.x86_64 2:7.4.629-6.el7 will be installed\cf1\highlight2 
+\par \cf0\highlight0 --> Finished Dependency Resolution\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependencies Resolved\cf1\highlight2 
+\par 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0  Package                  Arch             Version                      Repository\cf1\highlight2 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Installing:\cf1\highlight2 
+\par \cf0\highlight0  vim-enhanced             x86_64           2:7.4.629-6.el7              rhui-REGION-rhel-server-releases\cf1\highlight2 
+\par \cf0\highlight0 Installing for dependencies:\cf1\highlight2 
+\par \cf0\highlight0  gpm-libs                 x86_64           1.20.7-6.el7                 rhui-REGION-rhel-server-releases\cf1\highlight2 
+\par \cf0\highlight0  vim-common               x86_64           2:7.4.629-6.el7              rhui-REGION-rhel-server-releases\cf1\highlight2 
+\par \cf0\highlight0  vim-filesystem           x86_64           2:7.4.629-6.el7              rhui-REGION-rhel-server-releases\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Transaction Summary\cf1\highlight2 
+\par \cf0\highlight0 ===============================================================================================================\cf1\highlight2 
+\par \cf0\highlight0 Install  1 Package (+3 Dependent packages)\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Total download size: 7.0 M\cf1\highlight2 
+\par \cf0\highlight0 Installed size: 23 M\cf1\highlight2 
+\par \cf0\highlight0 Downloading packages:\cf1\highlight2 
+\par \cf0\highlight0 (1/4): gpm-libs-1.20.7-6.el7.x86_64.rpm                                                           |  32 kB  00:\cf1\highlight2 
+\par \cf0\highlight0 (2/4): vim-filesystem-7.4.629-6.el7.x86_64.rpm                                                    |  11 kB  00:\cf1\highlight2 
+\par \cf0\highlight0 (3/4): vim-enhanced-7.4.629-6.el7.x86_64.rpm                                                      | 1.1 MB  00:\cf1\highlight2 
+\par \cf0\highlight0 (4/4): vim-common-7.4.629-6.el7.x86_64.rpm                                                        | 5.9 MB  00:\cf1\highlight2 
+\par \cf0\highlight0 ---------------------------------------------------------------------------------------------------------------\cf1\highlight2 
+\par \cf0\highlight0 Total                                                                                     10 MB/s | 7.0 MB  00:\cf1\highlight2 
+\par \cf0\highlight0 Running transaction check\cf1\highlight2 
+\par \cf0\highlight0 Running transaction test\cf1\highlight2 
+\par \cf0\highlight0 Transaction test succeeded\cf1\highlight2 
+\par \cf0\highlight0 Running transaction\cf1\highlight2 
+\par \cf0\highlight0   Installing : 2:vim-filesystem-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Installing : 2:vim-common-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Installing : gpm-libs-1.20.7-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Installing : 2:vim-enhanced-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : gpm-libs-1.20.7-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-enhanced-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-common-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par \cf0\highlight0   Verifying  : 2:vim-filesystem-7.4.629-6.el7.x86_64\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Installed:\cf1\highlight2 
+\par \cf0\highlight0   vim-enhanced.x86_64 2:7.4.629-6.el7\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Dependency Installed:\cf1\highlight2 
+\par \cf0\highlight0   gpm-libs.x86_64 0:1.20.7-6.el7      vim-common.x86_64 2:7.4.629-6.el7      vim-filesystem.x86_64 2:7.4.629-6.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Complete!\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# vim /etc/ssh/sshd_config\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# systemctl restart sshd\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]#\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# su - gitadmin\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:04:17 UTC 2020 on pts/2\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@ip-172-31-93-223 ~]$ sudo hostnamectl set-hostname test\cf1\highlight2 
+\par 
+\par \cf0\highlight0 We trust you have received the usual lecture from the local System\cf1\highlight2 
+\par \cf0\highlight0 Administrator. It usually boils down to these three things:\cf1\highlight2 
+\par 
+\par \cf0\highlight0     #1) Respect the privacy of others.\cf1\highlight2 
+\par \cf0\highlight0     #2) Think before you type.\cf1\highlight2 
+\par \cf0\highlight0     #3) With great power comes great responsibility.\cf1\highlight2 
+\par 
+\par \cf0\highlight0 [sudo] password for gitadmin:\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@ip-172-31-93-223 ~]$ logout\cf1\highlight2 
+\par \cf0\highlight0 You have mail in /var/spool/mail/root\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# hostnamectl set-hostname test\cf1\highlight2 
+\par \cf0\highlight0 [root@ip-172-31-93-223 ~]# su - gitadmin\cf1\highlight2 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:05:49 UTC 2020 on pts/2\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ mkdir test\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ cd test\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test test]$ git --bare init\cf1\highlight2 
+\par \cf0\highlight0 Initialized empty Git repository in /home/gitadmin/test/\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test test]$ ls -al\cf1\highlight2 
+\par \cf0\highlight0 total 12\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 7 gitadmin gitadmin 119 Jan  5 05:10 \cf8 .\cf1\highlight2 
+\par \cf0\highlight0 drwx------. 4 gitadmin gitadmin 107 Jan  5 05:09 \cf8 ..\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 2 gitadmin gitadmin   6 Jan  5 05:10 \cf8 branches\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r--. 1 gitadmin gitadmin  66 Jan  5 05:10 config\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r--. 1 gitadmin gitadmin  73 Jan  5 05:10 description\cf1\highlight2 
+\par \cf0\highlight0 -rw-rw-r--. 1 gitadmin gitadmin  23 Jan  5 05:10 HEAD\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 2 gitadmin gitadmin 242 Jan  5 05:10 \cf8 hooks\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 2 gitadmin gitadmin  21 Jan  5 05:10 \cf8 info\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 4 gitadmin gitadmin  30 Jan  5 05:10 \cf8 objects\cf1\highlight2 
+\par \cf0\highlight0 drwxrwxr-x. 4 gitadmin gitadmin  31 Jan  5 05:10 \cf8 refs\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test test]$ cd ..\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 test\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ mv testrepo\cf1\highlight2 
+\par \cf0\highlight0\f1 mv: missing destination file operand after \lquote testrepo\rquote\cf1\highlight2\f0 
+\par \cf0\highlight0 Try 'mv --help' for more information.\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ mv test testrepo\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ git log\cf1\highlight2 
+\par \cf0\highlight0 fatal: Not a git repository (or any of the parent directories): .git\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ ls\cf1\highlight2 
+\par \cf8\highlight0 testrepo\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test ~]$ cd testrepo/\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git log\cf1\highlight2 
+\par \cf0\highlight0 fatal: bad default revision 'HEAD'\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git log\cf1\highlight2 
+\par \cf0\highlight0 commit 38eff1822192e16b1d2d2180d1c2a46f008c3ff6\cf1\highlight2 
+\par \cf0\highlight0 Author: tom <tom@example.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 05:09:27 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     c1\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git branch\cf1\highlight2 
+\par \cf0\highlight0 * master\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git cat-file -p 38eff1822192e16b1d2d2180d1c2a46f008c3ff6\cf1\highlight2 
+\par \cf0\highlight0 tree f353b342b53872c6a510229524f819c4fe0d5c1b\cf1\highlight2 
+\par \cf0\highlight0 author tom <tom@example.com> 1578200967 +0000\cf1\highlight2 
+\par \cf0\highlight0 committer tom <tom@example.com> 1578200967 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0 c1\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git cat-file -p f353b342b53872c6a510229524f819c4fe0d5c1b\cf1\highlight2 
+\par \cf0\highlight0 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    1\cf1\highlight2 
+\par \cf0\highlight0 100644 blob e69de29bb2d1d6434b8b29ae775ad8c2e48c5391    2\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$ git log\cf1\highlight2 
+\par \cf0\highlight0 commit d36ee6aa7ffa522be4e141cb667ccc392f92a2c5\cf1\highlight2 
+\par \cf0\highlight0 Author: jerry <jerry@example.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 05:19:01 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     jerry commit\cf1\highlight2 
+\par 
+\par \cf0\highlight0 commit 38eff1822192e16b1d2d2180d1c2a46f008c3ff6\cf1\highlight2 
+\par \cf0\highlight0 Author: tom <tom@example.com>\cf1\highlight2 
+\par \cf0\highlight0 Date:   Sun Jan 5 05:09:27 2020 +0000\cf1\highlight2 
+\par 
+\par \cf0\highlight0     c1\cf1\highlight2 
+\par \cf0\highlight0 [gitadmin@test testrepo]$\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \cf0\highlight0 Authenticating with public key "Imported-Openssh-Key: C:\\\\Users\\\\ADMIN\\\\Desktop\\\\dockertest.pem"\cf1\highlight2 
+\par \cf0\highlight0      \u9484?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9488?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                        \cf3\f1\bullet  MobaXterm 12.3 \bullet  \cf0\f0                          \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?            \cf4 (SSH client, X-server and networking tools)\cf0              \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? SSH session to \cf5 ec2-user\cf0 @\cf5 52.55.242.58                             \cf0\u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH compression : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  SSH-browser     : \cf3\f0 v\cf0                                             \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  X11-forwarding  : \cf6\f0 x\cf0   (disabled or not supported by server)     \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?\f1    \bullet  DISPLAY         : \cf5\f0 192.168.29.101:0.0                        \cf0    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474?                                                                    \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9474? \u8594? For more info, ctrl+click on \cf7\ul help\cf0\ulnone  or visit our \cf7\ul website\cf0\ulnone            \u9474?\cf1\highlight2 
+\par \cf0\highlight0      \u9492?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9496?\cf1\highlight2 
+\par 
+\par \cf0\highlight0 Last login: Sun Jan  5 05:52:43 2020 from 49.37.204.236\cf1\highlight2 
+\par \cf0\highlight0 [ec2-user@test ~]$ R\cf1\highlight2 
+\par \cf6\highlight0 Network error: Software caused connection abort\cf1\highlight2 
+\par 
+\par \cf9\highlight0\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\u9472?\cf1\highlight2 
+\par 
+\par \cf6\highlight0 Session stopped\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 <return>\cf0  to exit tab\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 R\cf0  to restart session\cf1\highlight2 
+\par \cf0\highlight0     - Press \cf5 S\cf0  to save terminal output to file\cf1\highlight2 
+\par \pard\cf0\highlight0\f2 
+\par }
+ 
